@@ -5,6 +5,7 @@ function Header() {
   return (
     <Container>
       <img src={logoImg} alt="Space Tourism logo" />
+      
       <nav>
         <a href="">
           <span>00</span>

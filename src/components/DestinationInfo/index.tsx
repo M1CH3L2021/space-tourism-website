@@ -8,7 +8,7 @@ interface PlanetInfoContainerProps {
   travelTime: string
 }
 
-function DestinationInfoContainer({ name, image, description, distance, travelTime }: PlanetInfoContainerProps) {
+function DestinationInfo({ name, image, description, distance, travelTime }: PlanetInfoContainerProps) {
   return (
     <Container>
       <img src={image} alt={name} />
@@ -17,20 +17,20 @@ function DestinationInfoContainer({ name, image, description, distance, travelTi
         <h2>{name}</h2>
         <p>{description}</p>
         <hr />
-        <article>
-          <div>
-            <h4>Avg. distance</h4>
+        <div>
+          <details>
+            <summary>Avg. distance</summary>
             <span>{distance}</span>
-          </div>
+          </details>
 
-          <div>
-            <h4>Est. travel time</h4>
+          <details>
+            <summary>Est. travel time</summary>
             <span>{travelTime}</span>
-          </div>
-        </article>
+          </details>
+        </div>
       </div>
     </Container>
   );
 };
 
-export default DestinationInfoContainer;
+export default DestinationInfo;

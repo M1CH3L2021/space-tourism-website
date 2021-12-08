@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react';
-import DestinationInfoContainer from '../../components/DestinationInfoContainer';
+import DestinationInfo from '../../components/DestinationInfo';
 
 import { Container } from './styles';
 import { api } from '../../services/api';
@@ -52,7 +52,7 @@ function Destination() {
           </ul>
         </nav>
 
-        <DestinationInfoContainer
+        <DestinationInfo
           name={selectedDestination.name}
           image={selectedDestination.image}
           description={selectedDestination.description}
