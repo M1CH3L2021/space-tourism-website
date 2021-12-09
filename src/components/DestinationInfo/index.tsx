@@ -18,15 +18,15 @@ function DestinationInfo({ name, image, description, distance, travelTime }: Pla
         <p>{description}</p>
         <hr />
         <div>
-          <details>
-            <summary>Avg. distance</summary>
+          <div>
+            <h4>Avg. distance</h4>
             <span>{distance}</span>
-          </details>
+          </div>
 
-          <details>
-            <summary>Est. travel time</summary>
+          <div>
+            <h4>Est. travel time</h4>
             <span>{travelTime}</span>
-          </details>
+          </div>
         </div>
       </div>
     </Container>

@@ -1,28 +1,37 @@
+import Link from 'next/link'
+
 import { Container } from './styles';
-import logoImg from '../../assets/logo.svg'
 
 function Header() {
   return (
     <Container>
-      <img src={logoImg} alt="Space Tourism logo" />
-      
+      <img src="/logo.svg" alt="Space Tourism logo" />
+
       <nav>
-        <a href="">
-          <span>00</span>
-          Home
-        </a>
-        <a href="">
-          <span>01</span>
-          Destination
-        </a>
-        <a href="">
-          <span>02</span>
-          Crew
-        </a>
-        <a href="">
-          <span>03</span>
-          Technology
-        </a>
+        <Link href="/">
+          <span>
+            <strong>00</strong>
+            <span>Home</span>
+          </span>
+        </Link>
+        <Link href="/destination">
+          <span>
+            <strong>01</strong>
+            <span>Destination</span>
+          </span>
+        </Link>
+        <Link href="/crew">
+          <span>
+            <strong>02</strong>
+            <span>Crew</span>
+          </span>
+        </Link>
+        <Link href="/technology">
+          <span>
+            <strong>03</strong>
+            <span>Technology</span>
+          </span>
+        </Link>
       </nav>
     </Container>
   );

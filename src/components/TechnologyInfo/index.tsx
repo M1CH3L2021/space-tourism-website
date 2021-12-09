@@ -11,11 +11,11 @@ interface TechnologyInfoProps {
 function TechnologyInfo({ name, description, image }: TechnologyInfoProps) {
   return (
     <Container>
-      <details>
-        <summary>The Terminology...</summary>
+      <div>
+        <h4>The Terminology...</h4>
         <h2>{name}</h2>
         <p>{description}</p>
-      </details>
+      </div>
 
       <img src={image} alt={`image of the ${name}`} />
     </Container>
